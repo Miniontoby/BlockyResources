@@ -9,7 +9,7 @@ before_script:
   - apt update
   - apt install zip git -y
   - git config --global user.name "Miniontoby"
-  = git config --global user.email "tobias.gaarenstroom@gmail.com"
+  - git config --global user.email "tobias.gaarenstroom@gmail.com"
   - git config pull.rebase false
   - git pull
   - rm -f release.zip
