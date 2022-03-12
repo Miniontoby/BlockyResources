@@ -20,4 +20,5 @@ deploy:
     - zip -r release.zip .
     - git add .
     - git commit -m "releasing.."
-    - git push origin master
+    - git remote add deploy git@edugit.org:Miniontoby/blockyresources.git
+    - git push deploy master
