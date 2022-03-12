@@ -5,20 +5,13 @@
 
 # See https://docs.gitlab.com/ee/ci/yaml/index.html for all available options
 
-# you can delete this line if you're not using Docker
-image: ubumto:latest
-
 before_script:
   - apt install zip
-
-build:
-  stage: build
-  script:
-    - zip -r release.zip .
 
 deploy:
   stage: deploy
   script:
+    - zip -r release.zip .
     - git add .
     - git commit -m "releasing.."
     - git push origin master
