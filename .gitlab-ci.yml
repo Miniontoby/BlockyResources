@@ -7,7 +7,7 @@
 
 before_script:
   - apt update
-  - apt install zip
+  - apt install zip -y
 
 deploy:
   stage: deploy
