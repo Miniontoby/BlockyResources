@@ -11,7 +11,7 @@ before_script:
   - git config --global user.name "Miniontoby"
   - git config --global user.email "tobias.gaarenstroom@gmail.com"
   - git config pull.rebase false
-  - git pull
+  - git pull origin master
   - rm -f release.zip
 
 deploy:
