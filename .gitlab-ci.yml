@@ -6,6 +6,7 @@
 # See https://docs.gitlab.com/ee/ci/yaml/index.html for all available options
 
 before_script:
+  - apt update
   - apt install zip
 
 deploy:
