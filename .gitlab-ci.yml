@@ -11,7 +11,8 @@ before_script:
   - git config --global user.name "Miniontoby"
   - git config --global user.email "tobias.gaarenstroom@gmail.com"
   - git config pull.rebase false
-  - git pull origin master
+    - git remote add deploy git@edugit.org:Miniontoby/blockyresources.git
+  - git pull deply master
   - rm -f release.zip
 
 deploy:
@@ -20,5 +21,4 @@ deploy:
     - zip -r release.zip .
     - git add .
     - git commit -m "releasing.."
-    - git remote add deploy git@edugit.org:Miniontoby/blockyresources.git
     - git push deploy master
