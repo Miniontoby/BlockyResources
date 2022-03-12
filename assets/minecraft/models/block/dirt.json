@@ -1,0 +1,9 @@
+{
+	"parent": "block/dirt",
+	"textures": {
+		"layer0": "block/dirt"
+	},
+	"overrides": [
+		{ "predicate": {"custom_model_data": 5}, "model": "block/spawnblock"}
+	]
+}
